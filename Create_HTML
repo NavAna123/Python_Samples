@@ -1,0 +1,9 @@
+#define the  html_list function
+def html_list(strings):
+   html=[]
+   html.append('<ul>')
+   for position in range(len(strings)):
+           html.append('<li>' + strings[position] +'</li>')
+   html.append('</ul>')
+   return html
+print(html_list(['first string', 'second string','third string']))
